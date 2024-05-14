@@ -22,7 +22,6 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Artikel />
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/home" element={<Home />} />
@@ -39,6 +38,7 @@ const Router = () => {
           element={<ForumDiskusiJelajahRuang />}
         />
         <Route exact path="/diskusi/ruang" element={<ForumDiskusiRuang />} />
+        <Route exact path="/artikel2" element={<Artikel />}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
