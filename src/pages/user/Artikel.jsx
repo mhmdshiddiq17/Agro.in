@@ -7,13 +7,9 @@ import { IoIosSearch } from "react-icons/io";
 
 const Line = () => {
   const lineStyle = {
-    position: 'absolute',
-    width: '1204px',
-    height: '0px',
-    left: '825px',
-    top: '599px',
+    height: '850px',
     border: '1px solid #807D7E',
-    transform: 'rotate(90deg)',
+    width: '2px',
   };
 
   return (
@@ -46,7 +42,9 @@ const Artikel = () => {
 					<p className='w-[430px] text-sm'>Kementerian Pertanian (Kementan) berencana untuk membangun klaster pertanian modern. Klaster pertanian modern tersebut mengacu sistem pertanian di negara-negara maju. Hal tersebut diungkapkan Mentan Andi Amran Sulaiman saat mendatangi para petani Bojongemas, Kecamatan Solokanjeruk, Kabupaten Bandung, Selasa (7/5/2024). Menurut Amran, demi merealisasikan pertanian modern, pemerintah daerah perlu menyediakan lahan.</p>
 				</div>
 				</div>
-				<Line />
+				<div className='pt-48'>
+					<Line />
+				</div>
 				<div className='pt-48 pb-16'>
 					<div className='flex flex-row flex-wrap mx-32 gap-y-2'>
 							<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
