@@ -50,7 +50,7 @@ const Line = () => {
 
 const MainArtikel = () =>{
 	return(
-		<div className='grid grid-rows-2 pt-48 pb-16 gap-y-16'>
+		<div className='grid grid-rows-2 gap-y-16'>
 				{DataArtikel.map((news, index) => (
 				<div className='flex flex-col mx-32 gap-y-2' key={index}>
 					<img src={Artikel1} alt="" className='w-[470px]'/>
@@ -65,9 +65,9 @@ const MainArtikel = () =>{
 
 const ChildArtikel = () =>{
 	return(
-		<div className='pt-48 pb-16'>
+		<div>
 		{SampingArtikel.map((tes, index) => (
-			<div className='flex flex-row mx-32 gap-y-2 my-7' key={index}>
+			<div className='flex flex-row mx-32 gap-y-2 mb-7' key={index}>
 					<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
 					<div className='ms-3 w-40 flex flex-col justify-between'>
 						<p className="text-[12px] font-bold">{tes.judulArtikel}</p>
@@ -82,15 +82,18 @@ const ChildArtikel = () =>{
 
 const Artikel = () => {
   return (
-    <div>
-    	<div className='mt-48 text-center'>
+    <div style={{backgroundColor: '#ffffff', backgroundImage: 'linear-gradient(#e6e6e6,#ffffff)'}}>
+    	<div className='pt-48 text-center'>
 				<p className='text-[64px] text-green-950 font-bold'>Majalah <span className='text-[#FAB737]'>Agro.in</span></p>
 				<p className='text-[16px] mt-4'>Menyajikan Wawasan Terbaru dalam Dunia Pertanian </p>
-				<input type="text" className='bg-[#D8D8D8] rounded-lg mt-7' style={{height: '35px', width: '320px'}} placeholder='Search'/>
+				<div>
+					<IoIosSearch />
+					<input type="text" className='bg-[#D8D8D8] rounded-lg mt-7' style={{height: '35px', width: '320px'}} placeholder='Search'/>
+				</div>
 			</div>
-			<div className='flex'>
+			<div className='flex pt-48 pb-16'>
 				<MainArtikel />
-				<div className='pt-48'>
+				<div>
 					<Line />
 				</div>
 				<ChildArtikel />
