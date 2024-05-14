@@ -17,6 +17,7 @@ import {
 import { Provider } from "react-redux";
 import About from "./pages/user/About";
 import HasilAnalisis from "./pages/user/HasilAnalisis";
+import { ArtikelDetail } from "./pages/user/ArtikelDetail";
 
 const Router = () => {
   return (
@@ -39,6 +40,7 @@ const Router = () => {
         />
         <Route exact path="/diskusi/ruang" element={<ForumDiskusiRuang />} />
         <Route exact path="/artikel2" element={<Artikel />}/>
+        <Route exact path="/artikeldetail" element={<ArtikelDetail />}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

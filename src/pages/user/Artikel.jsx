@@ -30,17 +30,6 @@ const SampingArtikel = [
 		{judulArtikel: `6 Pengaruh Negatif IPTEK di Bidang Pertanian`, timestamps: '25 April 2024', image: Artikel9},
 ]
 
-// const SampingArtikel = [
-// 	{
-// 		title: `Optimalisasi Produksi Tanaman: Panduan Praktis untuk Mengatur pH Tanah`, timestamps: '2 Mei 2024'
-// 	},
-// 	{
-// 		title: 'Pemerintah Aceh Gelora Kembali Pasar Tani di 2024', timestamps: '25 April 2024'
-// 	}
-// ]
-
-
-
 const Line = (props) => {
   // const lineStyle = {
   //   height: '850px',
@@ -116,42 +105,6 @@ const Artikel = (props) => {
 					<Line style={lineStyle}/>
 				</div>
 				<ChildArtikel />
-					{/* <div className='flex flex-row flex-wrap mx-32 gap-y-2'>
-							<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
-							<p className="text-[12px] font-bold ms-3">Optimalisasi Produksi<br/> Tanaman: Panduan Praktis<br /> untuk Mengatur pH Tanah<br></br> <span className='text-[#807D7E] font-light'>2 Mei 2024</span></p>
-					</div> */}
-					{/* {SampingArtikel.map((tes, index) => (
-
-							<div className='flex flex-row mx-32 gap-y-2 my-7' key={index}>
-									<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
-									<div className='ms-3 w-40'>
-										<p className="text-[12px] font-bold">{tes.judulArtikel}</p>
-										<p className='text-xs font-thin text-[#807D7E] mt-6'>{tes.timestamps}</p>
-									</div>
-							</div>
-
-					))} */}
-					{/* <div className='flex flex-row flex-wrap mx-32 gap-y-2'>
-							<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
-							<a className="text-[12px] font-bold ms-3">Optimalisasi Produksi<br/> Tanaman: Panduan Praktis<br /> untuk Mengatur pH Tanah<br></br> <span className='text-[#807D7E] font-light'>2 Mei 2024</span></a>
-					</div>
-					<div className='flex flex-row flex-wrap mx-32 gap-y-2 my-7'>
-							<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
-							<a className="text-[12px] font-bold ms-3">Optimalisasi Produksi<br/> Tanaman: Panduan Praktis<br /> untuk Mengatur pH Tanah<br></br> <span className='text-[#807D7E] font-light'>2 Mei 2024</span></a>
-					</div>
-					<div className='flex flex-row flex-wrap mx-32 gap-y-2'>
-							<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
-							<a className="text-[12px] font-bold ms-3">Optimalisasi Produksi<br/> Tanaman: Panduan Praktis<br /> untuk Mengatur pH Tanah<br></br> <span className='text-[#807D7E] font-light'>2 Mei 2024</span></a>
-					</div>
-					<div className='flex flex-row flex-wrap mx-32 gap-y-2 my-7'>
-							<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
-							<a className="text-[12px] font-bold ms-3">Optimalisasi Produksi<br/> Tanaman: Panduan Praktis<br /> untuk Mengatur pH Tanah<br></br> <span className='text-[#807D7E] font-light'>2 Mei 2024</span></a>
-					</div>
-					<div className='flex flex-row flex-wrap mx-32 gap-y-2'>
-							<img src={Artikel3} alt="" className='w-24 rounded-2xl'/>
-							<a className="text-[12px] font-bold ms-3">Optimalisasi Produksi<br/> Tanaman: Panduan Praktis<br /> untuk Mengatur pH Tanah<br></br> <span className='text-[#807D7E] font-light'>2 Mei 2024</span></a>
-					</div> */}
-
 			 </div>
 		</div>
   )
