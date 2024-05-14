@@ -90,6 +90,7 @@ export const ArtikelDetail = () => {
 						<Line style={horizStyle}/>
 						<h2 className='text-[48px] font-bold'>Berita Lainnya</h2>
 						<img src={Artikel2} alt="" className='w-2/3'/>
+						
         </div>
         <Line style={lineStyle}/>
         <ChildArtikel />
