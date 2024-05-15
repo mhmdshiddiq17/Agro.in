@@ -44,7 +44,9 @@ const Router = () => {
         <Route exact path="/artikeldetail" element={<ArtikelDetail />}/>
       </Routes>
       <Footer/>
-      <Login />
+      <Routes>
+        <Route exact path="/login" element={<Login />}/>
+      </Routes>
 
     </BrowserRouter>
   );
