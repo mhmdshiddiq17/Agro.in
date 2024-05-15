@@ -9,6 +9,7 @@ import Artikel8 from './../../assets/artikel/artikel8.png';
 import Artikel9 from './../../assets/artikel/artikel9.png';
 import { IoIosSearch } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import SearchBar from '../../components/atoms/SearchBar';
 
 
 const DataArtikel = [
@@ -105,10 +106,11 @@ const Artikel = (props) => {
     	<div className='pt-48 text-center'>
 				<p className='text-[64px] text-green-950 font-bold'>Majalah <span className='text-[#FAB737]'>Agro.in</span></p>
 				<p className='text-[16px] mt-4'>Menyajikan Wawasan Terbaru dalam Dunia Pertanian </p>
-				<div>
-					<IoIosSearch />
-					<input type="text" className='bg-[#D8D8D8] rounded-lg mt-7' style={{height: '35px', width: '320px'}} placeholder='Search'/>
-				</div>
+
+					{/* <IoIosSearch />
+					<input type="text" className='bg-[#D8D8D8] rounded-lg mt-7' style={{height: '35px', width: '320px'}} placeholder='Search'/> */}
+					<SearchBar />
+
 			</div>
 			<div className='flex pt-48 pb-16'>
 				<MainArtikel />
