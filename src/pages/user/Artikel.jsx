@@ -42,7 +42,7 @@ const Line = (props) => {
   );
 };
 
-const MainArtikel = () =>{
+export const MainArtikel = (props) =>{
 	const horizStyle = {
 		height: '2px',
 		width: '470px',
@@ -52,7 +52,7 @@ const MainArtikel = () =>{
 	return(
 		<div className='grid grid-rows-2 gap-y-16'>
 				{DataArtikel.map((news, index) => (
-					<div className='flex flex-col mx-32 gap-y-2' key={index}>
+					<div className={`flex flex-col ${props.className} gap-y-2`} key={index}>
 						<img src={news.image} alt="" className='w-[470px]'/>
 						<p className='text-[12px] text-[#807D7E]'>{news.timestamps}</p>
 						<Link to={'/'} className='text-[32px] font-semibold w-[430px]'>{news.title}</Link>
@@ -102,7 +102,7 @@ const Artikel = (props) => {
 
 			</div>
 			<div className='flex pt-48 pb-16'>
-				<MainArtikel />
+				<MainArtikel className="mx-32"/>
 				<div>
 					<Line style={lineStyle}/>
 				</div>

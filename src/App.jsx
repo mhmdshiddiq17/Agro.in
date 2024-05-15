@@ -2,6 +2,7 @@ import { store } from "./redux/store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/moleculs";
 import Artikel from './pages/user/Artikel';
+import Login from './pages/user/Login';
 import {
   Home,
   LandingPage,
@@ -43,6 +44,8 @@ const Router = () => {
         <Route exact path="/artikeldetail" element={<ArtikelDetail />}/>
       </Routes>
       <Footer/>
+      <Login />
+
     </BrowserRouter>
   );
 };

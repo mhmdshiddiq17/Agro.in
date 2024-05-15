@@ -11,6 +11,7 @@ import Artikel9 from './../../assets/artikel/artikel9.png';
 import Iklan1 from './../../assets/artikel/iklan1.png';
 import Iklan2 from './../../assets/artikel/iklan2.png';
 import { Link } from 'react-router-dom';
+import { MainArtikel } from './Artikel';
 
 
 const articles = [
@@ -35,13 +36,13 @@ const articles = [
       date: '25 April 2024',
     },
     {
-      image: Artikel8, title: `Violet Sun Agro+, Solusi Pertanian Lahan Kering Bertenaga Surya`, date: '25 April 2024', 
+      image: Artikel8, title: `Violet Sun Agro+, Solusi Pertanian Lahan Kering Bertenaga Surya`, date: '25 April 2024',
     },
 		{
-			image: Artikel9, title: `6 Pengaruh Negatif IPTEK di Bidang Pertanian`, date: '25 April 2024', 
+			image: Artikel9, title: `6 Pengaruh Negatif IPTEK di Bidang Pertanian`, date: '25 April 2024',
 		}
   ];
-  
+
   const ChildArtikel = () =>{
 	return(
 		<div className='mx-10'>
@@ -64,7 +65,7 @@ const articles = [
 		`</div>
 	)
 }
-  
+
 
 
 export const ArtikelDetail = () => {
@@ -72,14 +73,14 @@ export const ArtikelDetail = () => {
         height: '690px',
         border: '1px solid #807D7E',
         width: '2px',
-        
+
       };
 			const horizStyle = {
 				height: '2px',
 				width: '470px',
 				border: '1px solid #807D7E',
 				margin: '50px',
-				
+
 			}
   return (
     <div className='py-32 min-h-dvh flex flex-wrap'>
@@ -89,8 +90,9 @@ export const ArtikelDetail = () => {
             <p className='text-sm text-justify leading-loose'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus nemo modi commodi iste vitae impedit ratione labore quod, excepturi debitis doloribus quibusdam, ex est omnis cum id, laborum velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt, illum commodi sint harum culpa obcaecati ab ea facilis quasi hic ullam voluptatem reiciendis quis cumque. Aspernatur suscipit at illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eos eligendi dignissimos amet et incidunt maiores ad magni, ea ducimus quisquam atque molestias ex earum saepe eius assumenda. Accusamus, odit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo enim voluptatum non suscipit similique, voluptate quasi ad cum magni! Est, dolore. Minima aut laboriosam nam dolor, fuga adipisci error tenetur.</p>
 						<Line style={horizStyle}/>
 						<h2 className='text-[48px] font-bold'>Berita Lainnya</h2>
-						<img src={Artikel2} alt="" className='w-2/3'/>
-						
+						{/* <img src={Artikel2} alt="" className='w-2/3'/> */}
+            <MainArtikel />
+
         </div>
         <Line style={lineStyle}/>
         <ChildArtikel />
