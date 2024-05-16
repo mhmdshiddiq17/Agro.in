@@ -55,7 +55,7 @@ export const MainArtikel = (props) =>{
 					<div className={`flex flex-col ${props.className} gap-y-2`} key={index}>
 						<img src={news.image} alt="" className='w-[470px]'/>
 						<p className='text-[12px] text-[#807D7E]'>{news.timestamps}</p>
-						<Link to={'/'} className='text-[32px] font-semibold w-[430px]'>{news.title}</Link>
+						<Link to={'/artikeldetail'} className='text-[32px] font-semibold w-[430px]'>{news.title}</Link>
 						<p className='w-[430px] text-sm'>{news.description}</p>
 						<Line style={horizStyle}/>
 					</div>

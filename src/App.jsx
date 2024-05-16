@@ -19,11 +19,12 @@ import { Provider } from "react-redux";
 import About from "./pages/user/About";
 import HasilAnalisis from "./pages/user/HasilAnalisis";
 import { ArtikelDetail } from "./pages/user/ArtikelDetail";
+import Register from "./pages/user/Register";
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/home" element={<Home />} />
@@ -46,6 +47,7 @@ const Router = () => {
       <Footer/>
       <Routes>
         <Route exact path="/login" element={<Login />}/>
+        <Route exact path="/register" element={<Register />}/>
       </Routes>
 
     </BrowserRouter>
