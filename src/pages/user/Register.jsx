@@ -20,7 +20,7 @@ const Register = () => {
         >
           <IoIosArrowBack />Kembali
         </button>
-        <Card account="Sudah punya akun?" direct="Masuk disini" opsi="Daftar" className="h-[537px] inset-y-14" text="Daftar" to={'/login'} title={<>Bergabung Bersama<br/>Agro.in</>}>
+        <Card account="Sudah punya akun?" direct="Masuk disini" opsi="Daftar" className="h-[575px] inset-y-10" text="Daftar" to={'/login'} title={<>Bergabung Bersama<br/>Agro.in</>}>
           <InputLabel type="text" htmlFor="username" id="username">Username</InputLabel>
           <InputLabel type="email" htmlFor="email" id="email">Email</InputLabel>
 			    <InputLabel type="password" htmlFor="password" id="password">Password</InputLabel>

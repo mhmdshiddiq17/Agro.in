@@ -23,14 +23,16 @@ const CardForm = (props) => {
     <div className={`bg-white w-[330px] ${props.className} rounded-3xl absolute right-[20%] py-8 flex flex-col items-center`}>
 			<img src={Logo} alt="" />
 			<h1 className='text-2xl font-semibold text-center mt-2'>{props.title}</h1>
-			{props.children}
-			<div className='mt-4 flex gap-x-10'>
-				<div className='flex'>
-					<input type="checkbox" />
-					<p className='text-sm pt-[9px] font-semibold text-[#8D9E9B]'>Remember Me</p>
+			<form className='flex flex-col items-start w-3/4 gap-y-3'>
+				{props.children}
+				<div className='mt-4 flex gap-x-10'>
+					<div className='flex w-full'>
+						<input type="checkbox" />
+						<p className='text-sm pt-[9px] font-semibold text-[#8D9E9B]'>Remember Me</p>
+					</div>
+					<Button type="PrimaryButton" text={props.text} className="w-28 h-10"/>
 				</div>
-				<Button type="PrimaryButton" text={props.text} className="w-28 h-10"/>
-			</div>
+			</form>
 			<button type='submit' className='hover:bg-primary border-2 border-gray-400 text-sm rounded-full flex items-center gap-x-2 py-1 mt-4 px-4'><GrGoogle />{props.opsi} Dengan Google</button>
 			<p className="text-xs font-semibold text-[#8D9E9B] my-2">{props.account}</p>
 			<Link to={props.to} className="font-semibold text-[#8D9E9B]">{props.direct}</Link>

@@ -19,7 +19,7 @@ const Login = () => {
         >
           <IoIosArrowBack />Kembali
         </button>
-        <Card account="Belum punya akun?" direct="Daftar disini" opsi="Masuk" className="h-[470px] inset-y-24" text="Daftar" to={'/register'} title={<>Selamat Datang<br/>Kembali di Agro.in</>}>
+        <Card account="Belum punya akun?" direct="Daftar disini" opsi="Masuk" className="h-[490px] inset-y-24" text="Masuk" to={'/register'} title={<>Selamat Datang<br/>Kembali di Agro.in</>}>
           <InputLabel type="email" htmlFor="email" id="email">Email</InputLabel>
 			    <InputLabel type="password" htmlFor="password" id="password">Password</InputLabel>
         </Card>
